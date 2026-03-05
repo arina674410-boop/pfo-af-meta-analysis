@@ -1,0 +1,49 @@
+# Meta-analysis of Atrial Fibrillation Recurrence after PFO Closure
+
+This repository contains a reproducible statistical workflow for a meta-analysis investigating the risk of atrial fibrillation (AF) after transcatheter closure of patent foramen ovale (PFO) in patients with cryptogenic stroke.
+
+## Background
+
+Patent foramen ovale (PFO) is a common congenital cardiac condition present in approximately 25% of the adult population. Transcatheter PFO closure is widely used for secondary prevention of cryptogenic stroke. However, the procedure has been associated with transient episodes of atrial fibrillation.
+
+The aim of this meta-analysis was to evaluate the risk of AF recurrence after PFO closure in randomized controlled trials with follow-up beyond 45 days.
+
+## Data sources
+
+Four randomized controlled trials were included:
+
+- DEFENSE-PFO (2018)
+- CLOSE (2017)
+- REDUCE (2017)
+- Liu et al. (2020)
+
+Total sample size: **2006 patients**
+
+## Methods
+
+The statistical workflow was implemented in **Python using Google Colaboratory**.
+
+Libraries used:
+
+- pandas
+- NumPy
+- scikit-learn
+- matplotlib
+- seaborn
+- statsmodels
+
+Analytical steps included:
+
+- structured dataset construction
+- pooled risk estimation
+- logistic regression modelling
+- ROC curve and AUC evaluation
+- forest plot visualization
+
+## Results
+
+The pooled analysis showed a statistically significant increase in short-term atrial fibrillation episodes after PFO closure compared with medical therapy (RR ≈ 1.88; p < 0.05). However, most AF episodes were transient and occurred early after the procedure.
+
+## Purpose of the repository
+
+This repository demonstrates a reproducible computational workflow for meta-analysis of clinical trial data and illustrates the application of Python tools in cardiovascular data analysis.
